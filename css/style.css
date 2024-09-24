@@ -16,18 +16,23 @@ li {
 
 /* UTILS */
 
+:root {
+  --primary-color: #eee;
+}
+
 .container {
-  width: 1000px;
+  width: 1400px;
   margin: 0 auto;
   max-width: 100%;
 }
 
-li {
-  color: white;
+li > a {
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
 .white-icon {
-  color: white;
+  color: var(--primary-color);
 }
 
 /* HEADER */
@@ -37,6 +42,36 @@ li {
   background-color: orange;
 }
 
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 100px;
+}
+
+.logo > img {
+  width: 200px;
+  display: flex;
+}
+
+.gender-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.side-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.gender-selection,
+.side-icon {
+  width: 200px;
+}
 /* MAIN */
 
 /* FOOTER */
