@@ -86,8 +86,14 @@ li > a {
 .card-container > .card {
   flex: 0 0 400px;
   /* debug */
-  height: 500px;
+  height: 550px;
   background-color: red;
+}
+
+.card > .card-image > img {
+  width: 400px;
+  height: 550px;
+  object-fit: cover;
 }
 
 /* FOOTER */
