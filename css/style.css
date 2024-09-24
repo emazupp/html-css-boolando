@@ -83,6 +83,18 @@ li > a {
   gap: 50px 30px;
 }
 
+.card:hover > .card-image > .hover-image {
+  display: block;
+}
+
+.card > .card-image > .hover-image {
+  display: none;
+}
+
+.card:hover > .card-image > .default-image {
+  display: none;
+}
+
 .card-container > .card {
   flex: 0 0 400px;
   position: relative;
@@ -90,6 +102,10 @@ li > a {
   /* height: 550px; */
   padding-bottom: 10px;
   /* background-color: red; */
+}
+
+.card > .card-image {
+  height: 550px;
 }
 
 .card > .card-image > img {
@@ -106,9 +122,10 @@ li > a {
 
 .card > .card-description {
   height: 50px;
+  padding-top: 5px;
 }
 
-/* whish hearth item */
+/* on card items*/
 
 .wish-list-hearth {
   background-color: white;
@@ -124,5 +141,27 @@ li > a {
 
 .wish-list-hearth:hover {
   color: red;
+}
+
+.card-tag > div {
+  padding: 5px 10px;
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 0.7em;
+}
+
+.card-tag > .sales-percent {
+  background-color: red;
+}
+
+.card-tag > .product-types {
+  background-color: green;
+}
+
+.card-tag {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  bottom: 100px;
 }
 /* FOOTER */
