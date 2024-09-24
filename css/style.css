@@ -85,9 +85,11 @@ li > a {
 
 .card-container > .card {
   flex: 0 0 400px;
+  position: relative;
   /* debug */
-  height: 550px;
-  background-color: red;
+  /* height: 550px; */
+  padding-bottom: 10px;
+  /* background-color: red; */
 }
 
 .card > .card-image > img {
@@ -96,4 +98,31 @@ li > a {
   object-fit: cover;
 }
 
+/* card description */
+
+.sale-price {
+  color: red;
+}
+
+.card > .card-description {
+  height: 50px;
+}
+
+/* whish hearth item */
+
+.wish-list-hearth {
+  background-color: white;
+  font-size: 2.2em;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.wish-list-hearth:hover {
+  color: red;
+}
 /* FOOTER */
