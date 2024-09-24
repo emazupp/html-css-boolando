@@ -169,10 +169,36 @@ li > a {
 }
 /* FOOTER */
 
+.footer {
+  height: 100px;
+  background-color: #1a1a1a;
+}
+
 .footer-container {
   display: flex;
   justify-content: space-between;
+  color: var(--primary-color);
+  padding: 30px 80px 0;
 }
 
-.footer-container > .company-info {
+.company-info > ul {
+  display: flex;
+  gap: 10px;
+  font-size: 0.85em;
+  padding-top: 10px;
+}
+
+.company-info > b {
+  font-size: 1.1em;
+}
+
+.socials > b {
+  color: var(--primary-color);
+  font-size: 0.9em;
+}
+
+.socials > ul {
+  padding-top: 10px;
+  display: flex;
+  gap: 10px;
 }
