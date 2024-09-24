@@ -24,6 +24,8 @@ li {
   width: 1400px;
   margin: 0 auto;
   max-width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 li > a {
@@ -38,33 +40,33 @@ li > a {
 /* HEADER */
 
 .header {
-  height: 100px;
-  background-color: orange;
+  height: 80px;
+  background-color: #ff6900;
 }
 
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  line-height: 100px;
+  line-height: 80px;
 }
 
 .logo > img {
-  width: 200px;
+  width: 150px;
   display: flex;
 }
 
 .gender-items {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 15px;
 }
 
 .side-icon {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 10px;
 }
 
@@ -73,5 +75,19 @@ li > a {
   width: 200px;
 }
 /* MAIN */
+
+.card-container {
+  flex-wrap: wrap;
+  display: flex;
+  padding-top: 50px;
+  gap: 50px 30px;
+}
+
+.card-container > .card {
+  flex: 0 0 400px;
+  /* debug */
+  height: 500px;
+  background-color: red;
+}
 
 /* FOOTER */
